@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import About from '../components/About.astro';
 ---
 
 <!doctype html>
@@ -12,15 +13,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main class="flex flex-col justify-evenly items-center h-dvh">
+		<main class="flex flex-col justify-evenly items-center min-h-[calc(100vh-110px)]">
 			<div>
-				<h1 class="text-4xl text-center">Arregla Tus Altavozes</h1>
+				<h1 class="text-4xl text-center">Repara Tus Altavozes</h1>
 				<h2 class="text-2xl text-center">Expulsa el agua de tus altavozes facilmente usando este sonido de baja frequencia 🔊</h2>	
 			</div>
-			<button id="soundButton" class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700">
-				Activar Sonido 💨💦
-			</button>	
+			<div class="flex flex-col gap-y-5 items-center">
+				<button id="soundButton" class="px-8 py-4 text-white bg-blue-500 rounded-full hover:bg-blue-700 w-fit">
+					Activar Sonido 💨💦
+				</button>
+				<span class="text-sm text-slate-500">
+					Haz clic o toca el botón de arriba para activar el sonido
+				</span>	
+			</div>
 		</main>
+		<About />
 		<Footer />
 	</body>
 </html>

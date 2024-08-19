@@ -4,12 +4,11 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header class="m-0 px-2 md:px-4 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-	<nav class="lg:max-w-6xl mx-auto flex items-center sm:justify-between justify-center">
-		<h2 class="sm:block hidden m-0 text-base"><a href="/">{SITE_TITLE}</a></h2>
+	<nav class="sm:flex-row flex-col lg:max-w-5xl mx-auto flex items-center sm:justify-between justify-center">
+		<h2 class="sm:py-0 py-4 m-0 text-3xl font-bold sm:font-semibold sm:text-xl"><a href="/">🔊 {SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Inicio</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">Sobre Mi</HeaderLink>
 		</div>
 	</nav>
 </header>
